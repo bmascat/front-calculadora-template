@@ -7,7 +7,7 @@ document.getElementById("calculatorForm").addEventListener("submit", async funct
     const operation = document.getElementById("operation").value;
 
     // Construir la URL de la API según la operación
-    const url = `http://127.0.0.1:8000/${operation}/?num1=${num1}&num2=${num2}`;
+    const url = `http://backend:8000/${operation}/?num1=${num1}&num2=${num2}`;
 
     try {
         // Enviar la solicitud a la API

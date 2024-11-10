@@ -2,17 +2,13 @@ version: '3.8'
 
 services:
   backend:
-    build:
-      image: bmascat/back-calculadora
+    image: bmascat/back-calculadora
     container_name: backend-calculadora
-    ports:
-      - "8000:8000"
     networks:
       - calculadora-network
 
   frontend:
-    build:
-      image: bmascat/front-calculadora
+    image: bmascat/front-calculadora
     container_name: frontend-calculadora
     ports:
       - "80:80"
